@@ -6,8 +6,8 @@ def lcs(Str_1, Str_2, m, n):
     else:
        return max(lcs(Str_1, Str_2, m, n-1), lcs(Str_1, Str_2, m-1, n));
 
-Str_1 = "ABBBDCADACDACACBDBBDACA"
-Str_2 = "ABACDDACACDBAAACDBDACDA"
+Str_1 = "ABBCCCDAABCD"
+Str_2 = "ABACDDACACDB"
 print("## Longest common subsequence")
 print("String 1 : ",Str_1)
 print("String 2 : ",Str_2)
