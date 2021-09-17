@@ -24,6 +24,6 @@ while (no_edge < N - 1):
                         minimum = G[m][n]
                         a = m
                         b = n
-    print("  "+str(a) + "-" + str(b) + "   :   " + str(G[a][b]))
+
     selected_node[b] = True
     no_edge += 1
