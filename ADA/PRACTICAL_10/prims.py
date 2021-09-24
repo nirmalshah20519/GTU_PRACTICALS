@@ -19,11 +19,11 @@ while (no_edge < N - 1):
     for m in range(N):
         if selected_node[m]:
             for n in range(N):
-                if ((not selected_node[n]) and G[m][n]):
+                if((not selected_node[n]) and G[m][n]):
                     if minimum > G[m][n]:
                         minimum = G[m][n]
                         a = m
                         b = n
-
+    print("  "+str(a) + "-" + str(b) + "   :   " + str(G[a][b]))
     selected_node[b] = True
     no_edge += 1
